@@ -2,3 +2,15 @@
     width: 10%;
     height: 10%;
 }
+
+.jumbotron {
+    background-image: url('img/backgroun.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+}
+section {
+    padding-top: 4rem;
+}
