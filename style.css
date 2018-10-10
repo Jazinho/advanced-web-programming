@@ -14,3 +14,13 @@
 section {
     padding-top: 4rem;
 }
+
+.workers > div {
+    text-align: center;
+}
+
+.workers > div > img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
