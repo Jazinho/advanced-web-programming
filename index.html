@@ -30,19 +30,26 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav navbar" id="navScrollspy">
                     <li class="nav-item">
-                        <a class="nav-link" href="#top">Do góry</a>
+                        <a class="nav-link" data-scroll href="#top">Do góry</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">O nas</a>
+                        <a class="nav-link" data-scroll href="#section-description">O nas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" data-scroll href="#section-showcase">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Usługi</a>
+                        <a class="nav-link" data-scroll href="#section-oferta">Usługi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ceny</a></li>
+                        <a class="nav-link" data-scroll href="#section-cennik">Ceny</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll href="#workers">Pracownicy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll href="#contact">Kontakt</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -119,7 +126,7 @@
                 </div>
             </section>
 
-            <section id=" section-oferta">
+            <section id="section-oferta">
                 <h2 class="display-4">Nasza oferta</h2>
                 <div class="row">
                     <div class="col-12 col-sm-6 col-lg-3">
@@ -158,7 +165,7 @@
                 </div>
             </section>
 
-            <section id=" section-cennik">
+            <section id="section-cennik">
                 <h2 class="display-4">Wybierz plan cenowy</h2>
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -243,7 +250,7 @@
                 </div>
             </section>
 
-            <section id="contact-form">
+            <section id="contact">
                 <h2 class="display-4">Kontakt</h2>
                 <textarea>Write us a message...</textarea>
             </section>
@@ -273,6 +280,7 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -281,8 +289,24 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!--SMOOTH SCROLL-->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get minor updates and patch fixes within a major version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get patch fixes within a minor version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get a specific version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 </body>
 </html>
